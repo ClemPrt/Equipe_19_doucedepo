@@ -1,0 +1,527 @@
+/**
+ * @Author: Clem
+ * @Date:   2018-02-16T02:41:31+01:00
+ * @Last modified by:   Clem
+ * @Last modified time: 2018-02-16T04:49:51+01:00
+ */
+
+
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: white;
+  font-family: "Nunito", sans-serif; }
+
+main {
+  padding-top: 100px; }
+
+.container {
+  width: 90%;
+  margin: 0px auto; }
+
+.button_width {
+  width: 250px;
+  margin: auto;
+  text-align: center; }
+
+.button {
+  font-size: 1.5em;
+  border: 1px solid #668aa3;
+  border-radius: 50px;
+  background-color: #668aa3;
+  padding: 10px 20px;
+  color: white;
+  margin: 30% auto 0% auto; }
+  .button:hover {
+    border: 1px solid #668aa3;
+    color: #668aa3;
+    background-color: white; }
+
+a {
+  color: inherit; }
+
+a:hover {
+  color: inherit; }
+
+hr {
+  width: 20px;
+  height: 3px;
+  margin-bottom: 2%;
+  background-color: black; }
+
+.drilldown a {
+  padding: 0.7rem 1rem;
+  background: none; }
+
+nav {
+  background-color: white;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  z-index: 999; }
+
+.menu_logo_doucedepo li {
+  list-style: none; }
+
+.menu {
+  padding: 2% 0%;
+  margin: 0; }
+  .menu ul {
+    border-radius: 3px; }
+  .menu li {
+    z-index: 1000; }
+    .menu li a {
+      font-size: 1.5em;
+      color: black;
+      z-index: 1000; }
+
+.button_bag {
+  border: 1px solid #f268a8;
+  border-radius: 30px;
+  padding: 0px 10px;
+  background-color: #f268a8;
+  color: white; }
+
+.button_account {
+  border: 1px solid #668aa3;
+  border-radius: 30px;
+  padding: 0px 10px;
+  background-color: #668aa3; }
+
+span {
+  color: white; }
+
+#hamburger {
+  display: none;
+  width: 100%;
+  height: 50px;
+  text-align: center; }
+
+@media screen and (max-width: 1000px) {
+  #mdr {
+    display: none; }
+
+  #hamburger {
+    display: block; } }
+footer {
+  position: relative; }
+
+.footer_bar_top {
+  background-color: #fde5ea;
+  margin-top: 5%; }
+  .footer_bar_top h3 {
+    font-family: "Sacramento", cursive;
+    font-size: 4em;
+    margin-top: 8%; }
+  .footer_bar_top li {
+    font-size: 1.5em;
+    list-style: none; }
+  .footer_bar_top label {
+    font-size: 1.5em; }
+  .footer_bar_top input {
+    width: 350px;
+    height: 30px;
+    border: 1px solid #fde5ea;
+    font-size: 1.5em; }
+  .footer_bar_top button {
+    font-size: 1.5em;
+    border: 1px solid #f268a8;
+    border-radius: 50px;
+    background-color: #f268a8;
+    padding: 10px 20px;
+    color: white; }
+
+.footer_socialnetwork {
+  display: inline-block;
+  width: 15%;
+  margin-top: 10px;
+  padding-right: 1%; }
+
+.footer_logo_blog {
+  margin-top: 7%; }
+
+.footer_bottom_info {
+  font-size: 1em; }
+
+.footer_arrow_up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 3%; }
+
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute;
+  text-align: center;
+  top: 175px;
+  left: 400px; }
+
+.article_product .article_product_content {
+  margin-top: 50px; }
+.article_product h3 {
+  font-size: 4em;
+  margin: 4% 0% 0% 0%;
+  text-align: center;
+  font-family: "Sacramento", cursive;
+  background-color: #fde5ea; }
+.article_product h4 {
+  margin: 0;
+  font-size: 4em;
+  font-family: "Nunito", sans-serif; }
+.article_product p {
+  font-size: 1.5em;
+  margin: 0; }
+.article_product .button_product {
+  margin-top: 30px; }
+
+.article_values {
+  width: 40%;
+  margin: 5% auto; }
+  .article_values p {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 2%; }
+
+.article_personalisation h3 {
+  font-size: 4em;
+  margin: 6% 0% 0% 0%;
+  text-align: center;
+  font-family: "Sacramento", cursive; }
+.article_personalisation p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 3%; }
+
+.article_flux_instagram h3 {
+  font-size: 4em;
+  margin: 6% 0% 0% 0%;
+  text-align: center;
+  font-family: "Sacramento", cursive; }
+.article_flux_instagram .insta_hover:hover {
+  transform: scale(1.1);
+  transition: all 0.5s; }
+
+@media screen and (max-width: 1000px) {
+  .absolute {
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    left: 50px; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .absolute {
+    position: absolute;
+    text-align: center;
+    top: 35px;
+    left: 100px; } }
+.product_selector {
+  position: fixed; }
+  .product_selector h1 {
+    font-size: 4em;
+    font-family: "Sacramento", cursive; }
+  .product_selector ul {
+    list-style: none; }
+    .product_selector ul li {
+      font-size: 1.5em;
+      opacity: 0.5; }
+
+.product_item {
+  position: relative; }
+  .product_item img {
+    margin-top: 20%; }
+  .product_item p {
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 0.7;
+    margin-top: 5%; }
+
+.image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden; }
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center; }
+
+.product_item:hover .image {
+  opacity: 0.3; }
+
+.product_item:hover .middle {
+  opacity: 1; }
+
+.text {
+  background-color: #fde5ea;
+  color: black;
+  font-size: 1.6em;
+  padding: 16px 32px; }
+
+body.history_page {
+  background-color: #eae7e7; }
+
+.history_top_content {
+  width: 100%;
+  height: 550px;
+  background: url("../images/history/baby_background.png") no-repeat;
+  background-size: cover; }
+
+.history_top_content h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 9em;
+  margin-top: 220px;
+  margin-bottom: 100px;
+  text-align: center; }
+
+h1.title_instagram {
+  font-family: "Sacramento", cursive;
+  font-size: 9em;
+  text-align: center;
+  margin-top: 60px; }
+
+p.history_description {
+  text-align: center;
+  font-size: 4em;
+  font-family: "Nunito", sans-serif;
+  margin: 0px 0px;
+  padding: 100px 0px 0px 20px;
+  font-size: 2.4em; }
+
+h3.name_title_square {
+  font-family: "Sacramento", cursive;
+  font-size: 4em;
+  text-align: center; }
+
+.square_vertical_center {
+  margin-top: 75px; }
+
+.transition_element {
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(#ecd1d1, #eae7e7); }
+
+.transition_element #title {
+  text-align: center;
+  font-family: 'Sacramento', cursive;
+  padding-top: 2em;
+  font-size: 3em; }
+
+.history_top_content img {
+  margin-top: 120px; }
+
+.flux_instagram {
+  padding-top: 100px; }
+
+.product_content {
+  width: 100%; }
+
+p.title_product {
+  font-size: 4em;
+  font-family: "Nunito", sans-serif;
+  padding-top: 110px; }
+
+.separation_bar_1 {
+  width: 100%;
+  height: 0.1em;
+  background-color: #668aa3; }
+
+.separation_bar_2 {
+  width: 100%;
+  height: 0.1em;
+  background-color: #668aa3;
+  margin-top: 3%; }
+
+.button#product_button1 {
+  font-size: 1.9em;
+  border: 1px solid #668aa3;
+  border-radius: 50px;
+  background-color: #668aa3;
+  padding: 20px 20px;
+  color: white;
+  margin: 0% auto 0% auto; }
+  .button#product_button1:hover {
+    border: 1px solid #668aa3;
+    color: #668aa3;
+    background-color: white; }
+
+.button#product_button2 {
+  font-size: 1.9em;
+  border: 1px solid #fde5ea;
+  border-radius: 50px;
+  background-color: #fde5ea;
+  padding: 20px 20px;
+  color: black;
+  margin: 0% auto 0% auto; }
+  .button#product_button2:hover {
+    border: 1px solid #fde5ea;
+    color: #fde5ea;
+    background-color: white; }
+
+.product_selector {
+  position: fixed; }
+  .product_selector h1 {
+    font-size: 4em;
+    font-family: "Sacramento", cursive; }
+  .product_selector ul {
+    list-style: none; }
+    .product_selector ul li {
+      font-size: 1.5em;
+      opacity: 0.5; }
+
+.product_item {
+  position: relative; }
+  .product_item img {
+    margin-top: 20%;
+    width: 70%; }
+  .product_item p {
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 0.7;
+    margin-top: 5%; }
+
+.image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden; }
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center; }
+
+.product_item:hover .image {
+  opacity: 0.3; }
+
+.product_item:hover .middle {
+  opacity: 1; }
+
+.text {
+  background-color: #fde5ea;
+  color: black;
+  font-size: 1.6em;
+  padding: 16px 32px; }
+
+p.title_description_product {
+  font-size: 4em;
+  font-family: "Sacramento", cursive;
+  margin-top: 3%; }
+
+p.description_product {
+  font-size: 1.5em;
+  font-family: "Nunito", sans-serif; }
+
+p.products_other {
+  margin-top: 3%;
+  font-size: 4em;
+  font-family: "Sacramento", cursive; }
+
+img.other_products {
+  width: 20%;
+  display: flex; }
+
+
+  #fb_container
+  {
+  	margin-top:10px;
+  }
+  #hand
+  {
+  	margin-left: 250px;
+  	margin-top: -80px;
+  	float:left;
+  	transition-property: transform;
+      transition-duration: 2s;
+      transition-timing-function: ease;
+      visibility: none;
+      clear:both;
+      z-index: 2;
+  }
+
+  #hand:hover
+  {
+  	transform: translateX(200px);
+  }
+
+  #letter
+  {
+  	 opacity: 0.7;
+  	 z-index: 1;
+
+  }
+  #facebook
+  {
+  	display: flex;
+  	justify-content: center;
+  }
+
+  #cale_haut
+  {
+  	/*background-color: red;*/
+  	opacity: 0.8;
+  	width: 300px;
+  	height: 130px;
+  }
+  #cale_gauche
+  {
+  	clear: both;
+  	float: left;
+  	/*background-color: red;*/
+  	opacity: 0.8;
+  	width: 55px;
+  	height: 130px;
+  }
+  #cale_droite
+  {
+  	float:right;
+  /*	background-color: red;*/
+  	opacity: 0.8;
+  	width: 55px;
+  	height: 130px;
+  }
+  
+  #coussin
+  {
+  	margin:0 auto;
+  	background-image:url('../images/coussin_vide.png');
+  	background-size: 650px;
+  	min-width:650px;
+  	min-height:400px;
+  	max-width:650px;
+  	max-height:400px;
+  	color: red;
+  	position:relative;
+  	text-align:center;
+  }
+
+
+  #coussin h5
+  {
+  	margin-left: -60px;
+  	font-size: 80%;
+  	font-family: 'Open Sans', sans-serif;
+  	position:absolute;
+  	bottom:-10px;
+  	left: 25%;
+  	color: #555555;
+  }
+/*# sourceMappingURL=style.css.map */
